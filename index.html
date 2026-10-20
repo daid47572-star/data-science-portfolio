@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>wangyueyang | Data Science Portfolio</title>
+    <meta name="description" content="Data Science Portfolio showcasing machine learning projects, data analysis, and visualization skills">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo">
+                <span class="logo-bracket">&lt;</span>WY<span class="logo-bracket">/&gt;</span>
+            </a>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-particles" id="particles"></div>
+        <div class="hero-content">
+            <div class="hero-badge">DATA SCIENCE PORTFOLIO</div>
+            <h1 class="hero-title">
+                Hi, I'm <span class="gradient-text">wangyueyang</span>
+            </h1>
+            <h2 class="hero-subtitle">
+                I turn <span class="typing-text" id="typing"></span><span class="cursor">|</span>
+            </h2>
+            <p class="hero-description">
+                Exploring data, building predictive models, and uncovering insights that drive real-world decisions.
+            </p>
+            <div class="hero-buttons">
+                <a href="#projects" class="btn btn-primary">View Projects</a>
+                <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat">
+                    <div class="stat-number" data-target="3">0</div>
+                    <div class="stat-label">ML Models</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number" data-target="8">0</div>
+                    <div class="stat-label">Visualizations</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number" data-target="87">0</div>
+                    <div class="stat-label">Accuracy %</div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>Scroll Down</span>
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="title-number">01.</span> About Me
+            </h2>
+            <div class="about-grid">
+                <div class="about-text">
+                    <p>
+                        Hello! I'm <strong>wangyueyang</strong>, a passionate data science student with a strong foundation
+                        in machine learning, statistical analysis, and data visualization. I love transforming raw data
+                        into meaningful stories that drive decisions.
+                    </p>
+                    <p>
+                        My journey in data science began with curiosity about patterns in everyday phenomena. Since then,
+                        I've developed expertise in Python, machine learning algorithms, and modern data visualization
+                        techniques.
+                    </p>
+                    <p>
+                        I believe in the power of reproducible research and clean code. Every project I build is
+                        well-documented, tested, and designed to be accessible to others.
+                    </p>
+                    <div class="about-highlights">
+                        <div class="highlight-item">
+                            <span class="highlight-icon">🎯</span>
+                            <div>
+                                <h4>Goal-Oriented</h4>
+                                <p>Focused on solving real problems with data</p>
+                            </div>
+                        </div>
+                        <div class="highlight-item">
+                            <span class="highlight-icon">📊</span>
+                            <div>
+                                <h4>Data-Driven</h4>
+                                <p>Evidence-based insights and decisions</p>
+                            </div>
+                        </div>
+                        <div class="highlight-item">
+                            <span class="highlight-icon">🔬</span>
+                            <div>
+                                <h4>Research-Minded</h4>
+                                <p>Curious, analytical, and thorough</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="image-frame">
+                        <div class="image-placeholder">
+                            <div class="data-icon">📈</div>
+                            <div class="data-stats">
+                                <div class="data-bar" style="--height: 80%"></div>
+                                <div class="data-bar" style="--height: 95%"></div>
+                                <div class="data-bar" style="--height: 60%"></div>
+                                <div class="data-bar" style="--height: 75%"></div>
+                                <div class="data-bar" style="--height: 90%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="title-number">02.</span> Technical Skills
+            </h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3 class="skill-category-title">Programming Languages</h3>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Python</span>
+                                <span class="skill-percentage">95%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="95"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">SQL</span>
+                                <span class="skill-percentage">85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">R</span>
+                                <span class="skill-percentage">70%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="70"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3 class="skill-category-title">Data Analysis &amp; ML</h3>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Pandas &amp; NumPy</span>
+                                <span class="skill-percentage">90%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="90"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Scikit-learn</span>
+                                <span class="skill-percentage">88%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="88"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">TensorFlow/Keras</span>
+                                <span class="skill-percentage">75%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="75"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3 class="skill-category-title">Visualization</h3>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Matplotlib</span>
+                                <span class="skill-percentage">92%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="92"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Seaborn</span>
+                                <span class="skill-percentage">90%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="90"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Plotly</span>
+                                <span class="skill-percentage">80%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="80"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3 class="skill-category-title">Tools &amp; Platforms</h3>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Git &amp; GitHub</span>
+                                <span class="skill-percentage">90%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="90"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Jupyter Notebook</span>
+                                <span class="skill-percentage">95%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="95"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">VS Code</span>
+                                <span class="skill-percentage">88%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="88"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tech-stack">
+                <h3>Technologies I Work With</h3>
+                <div class="tech-icons">
+                    <span class="tech-icon">Python</span>
+                    <span class="tech-icon">Pandas</span>
+                    <span class="tech-icon">NumPy</span>
+                    <span class="tech-icon">Scikit-learn</span>
+                    <span class="tech-icon">Matplotlib</span>
+                    <span class="tech-icon">Seaborn</span>
+                    <span class="tech-icon">Jupyter</span>
+                    <span class="tech-icon">Git</span>
+                    <span class="tech-icon">GitHub</span>
+                    <span class="tech-icon">VS Code</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="title-number">03.</span> Featured Projects
+            </h2>
+
+            <div class="project-featured">
+                <div class="project-badge">⭐ Featured Project</div>
+                <div class="project-header">
+                    <h3 class="project-title">Student Performance Analysis</h3>
+                    <div class="project-links">
+                        <a href="https://github.com/daid47572-star/data-science-project" target="_blank" rel="noopener" class="project-link" title="View on GitHub">
+                            <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor">
+                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="project-meta">
+                    <span class="project-status status-completed">✓ Completed</span>
+                    <span class="project-tag">Machine Learning</span>
+                    <span class="project-tag">Classification</span>
+                    <span class="project-tag">Python</span>
+                </div>
+
+                <p class="project-description">
+                    An end-to-end data science project analyzing the UCI Student Performance dataset to identify factors
+                    affecting student academic success. The project includes exploratory data analysis, statistical testing,
+                    and predictive modeling achieving 93% accuracy in classifying student pass/fail outcomes.
+                </p>
+
+                <div class="project-highlights">
+                    <h4>Key Achievements</h4>
+                    <ul>
+                        <li>Analyzed 395 students with 33 features</li>
+                        <li>Identified past failures as the strongest predictor of academic success</li>
+                        <li>Built and compared 3 ML models (Logistic Regression, Decision Tree, Random Forest)</li>
+                        <li>Created 10+ high-quality visualizations</li>
+                        <li>Achieved 93% accuracy in pass/fail classification</li>
+                    </ul>
+                </div>
+
+                <div class="project-visuals">
+                    <figure class="project-image">
+                        <img src="visualizations/factor_analysis.png" alt="Factor Analysis Visualization" loading="lazy">
+                        <figcaption>Figure 1: Key factors affecting student performance</figcaption>
+                    </figure>
+                    <figure class="project-image">
+                        <img src="visualizations/correlation_heatmap.png" alt="Correlation Heatmap" loading="lazy">
+                        <figcaption>Figure 2: Feature correlation heatmap (33 features)</figcaption>
+                    </figure>
+                </div>
+
+                <div class="project-visuals">
+                    <figure class="project-image">
+                        <img src="visualizations/grade_distribution.png" alt="Grade Distribution" loading="lazy">
+                        <figcaption>Figure 3: Distribution of student grades across periods</figcaption>
+                    </figure>
+                    <figure class="project-image">
+                        <img src="visualizations/model_performance.png" alt="Model Performance" loading="lazy">
+                        <figcaption>Figure 4: Comparison of ML model accuracies</figcaption>
+                    </figure>
+                </div>
+
+                <div class="project-visuals">
+                    <figure class="project-image">
+                        <img src="visualizations/feature_importance.png" alt="Feature Importance" loading="lazy">
+                        <figcaption>Figure 5: Random Forest feature importance ranking</figcaption>
+                    </figure>
+                    <figure class="project-image">
+                        <img src="visualizations/confusion_matrix.png" alt="Confusion Matrix" loading="lazy">
+                        <figcaption>Figure 6: Confusion matrix for pass/fail classification</figcaption>
+                    </figure>
+                </div>
+
+                <div class="project-visuals">
+                    <figure class="project-image">
+                        <img src="visualizations/learning_curve.png" alt="Learning Curve" loading="lazy">
+                        <figcaption>Figure 7: Model learning curve showing training vs validation</figcaption>
+                    </figure>
+                    <figure class="project-image">
+                        <img src="visualizations/deep_dive.png" alt="Deep Dive Analysis" loading="lazy">
+                        <figcaption>Figure 8: Deep dive into feature relationships</figcaption>
+                    </figure>
+                </div>
+
+                <div class="project-actions">
+                    <a href="https://github.com/daid47572-star/data-science-project" target="_blank" rel="noopener" class="btn btn-primary">
+                        <span>View on GitHub</span>
+                        <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+                            <path d="M5 12h14M12 5l7 7-7 7"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+            <div class="project-upcoming">
+                <h3>🚀 Upcoming Projects</h3>
+                <div class="upcoming-grid">
+                    <div class="upcoming-card">
+                        <div class="upcoming-icon">📈</div>
+                        <h4>Time Series Forecasting</h4>
+                        <p>Stock price prediction using LSTM neural networks</p>
+                        <span class="upcoming-status">In Progress</span>
+                    </div>
+                    <div class="upcoming-card">
+                        <div class="upcoming-icon">💬</div>
+                        <h4>Sentiment Analysis</h4>
+                        <p>NLP project analyzing social media sentiment</p>
+                        <span class="upcoming-status">Planned</span>
+                    </div>
+                    <div class="upcoming-card">
+                        <div class="upcoming-icon">🎬</div>
+                        <h4>Movie Recommender</h4>
+                        <p>Collaborative filtering recommendation engine</p>
+                        <span class="upcoming-status">Planned</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="title-number">04.</span> Get In Touch
+            </h2>
+            <div class="contact-content">
+                <p class="contact-text">
+                    I'm always open to discussing data science projects, collaboration opportunities, or just chatting about
+                    the latest trends in AI and machine learning. Feel free to reach out!
+                </p>
+                <div class="contact-methods">
+                    <a href="mailto:your.email@example.com" class="contact-card">
+                        <div class="contact-icon">📧</div>
+                        <h4>Email</h4>
+                        <p>your.email@example.com</p>
+                    </a>
+                    <a href="https://github.com/daid47572-star" target="_blank" rel="noopener" class="contact-card">
+                        <div class="contact-icon">💻</div>
+                        <h4>GitHub</h4>
+                        <p>@daid47572-star</p>
+                    </a>
+                    <a href="https://linkedin.com/in/your-name" target="_blank" rel="noopener" class="contact-card">
+                        <div class="contact-icon">💼</div>
+                        <h4>LinkedIn</h4>
+                        <p>Connect with me</p>
+                    </a>
+                </div>
+                <a href="mailto:your.email@example.com" class="btn btn-primary btn-large">
+                    Say Hello
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p class="footer-text">
+                    Designed &amp; Built by <strong>wangyueyang</strong> | Student ID: MC643435
+                </p>
+                <p class="footer-meta">
+                    © 2026 Data Science Portfolio. Built with HTML, CSS, and JavaScript. Hosted on GitHub Pages.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
